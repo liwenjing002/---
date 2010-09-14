@@ -1,6 +1,6 @@
-´ËÀà°üº¬ÀûÓÃJAVA½øĞĞÎÄ¼şµÄÑ¹Ëõ£¬½âÑ¹£¬É¾³ı£¬¿½±´²Ù×÷¡£²¿·Ö´úÂë×Ü½áÁËÍøÉÏµÄ´úÂë£¬²¢ĞŞÕıÁËºÜ¶àBUG,ÀıÈçÑ¹ËõÖĞÎÄÎÊÌâ£¬Ñ¹ËõÎÄ¼şÖĞ¶àÓà¿ÕÎÄ¼şÎÊÌâ¡£
+ï»¿æ­¤ç±»åŒ…å«åˆ©ç”¨JAVAè¿›è¡Œæ–‡ä»¶çš„å‹ç¼©ï¼Œè§£å‹ï¼Œåˆ é™¤ï¼Œæ‹·è´æ“ä½œã€‚éƒ¨åˆ†ä»£ç æ€»ç»“äº†ç½‘ä¸Šçš„ä»£ç ï¼Œå¹¶ä¿®æ­£äº†å¾ˆå¤šBUG,ä¾‹å¦‚å‹ç¼©ä¸­æ–‡é—®é¢˜ï¼Œå‹ç¼©æ–‡ä»¶ä¸­å¤šä½™ç©ºæ–‡ä»¶é—®é¢˜ã€‚
 
-    ×¢Òâ£º´ËÀàÖĞÓÃµ½µÄÑ¹ËõÀàZipEntryµÈ¶¼À´×ÔÓÚorg.apache.tools°ü¶ø·Çjava.util¡£´Ë°üÔÚant.jarÖĞÓĞ¡£
+    æ³¨æ„ï¼šæ­¤ç±»ä¸­ç”¨åˆ°çš„å‹ç¼©ç±»ZipEntryç­‰éƒ½æ¥è‡ªäºorg.apache.toolsåŒ…è€Œéjava.utilã€‚æ­¤åŒ…åœ¨ant.jarä¸­æœ‰ã€‚
 
   /* 
      * Version information
@@ -47,7 +47,7 @@
 
     /**
 
-     * javaÎÄ¼ş²Ù×÷¹¤¾ßÀà
+     * javaæ–‡ä»¶æ“ä½œå·¥å…·ç±»
 
      * @author Chris
 
@@ -65,11 +65,11 @@
 
         /**
 
-         * Ñ¹ËõÎÄ¼ş
+         * å‹ç¼©æ–‡ä»¶
 
-         * @param inputFileName ÒªÑ¹ËõµÄÎÄ¼ş»òÎÄ¼ş¼ĞÂ·¾¶£¬ÀıÈç£ºc:\\a.txt,c:\\a\
+         * @param inputFileName è¦å‹ç¼©çš„æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹è·¯å¾„ï¼Œä¾‹å¦‚ï¼šc:\\a.txt,c:\\a\
 
-         * @param outputFileName Êä³özipÎÄ¼şµÄÂ·¾¶£¬ÀıÈç£ºc:\\a.zip
+         * @param outputFileName è¾“å‡ºzipæ–‡ä»¶çš„è·¯å¾„ï¼Œä¾‹å¦‚ï¼šc:\\a.zip
 
          */
 
@@ -81,7 +81,7 @@
 
             zip(out, new File(inputFileName), "");
 
-            log.debug("Ñ¹ËõÍê³É£¡");
+            log.debug("å‹ç¼©å®Œæˆï¼");
 
             out.closeEntry();
 
@@ -91,13 +91,13 @@
 
 /**
 
-         * Ñ¹ËõÎÄ¼ş
+         * å‹ç¼©æ–‡ä»¶
 
          * @param out org.apache.tools.zip.ZipOutputStream
 
-         * @param file ´ıÑ¹ËõµÄÎÄ¼ş
+         * @param file å¾…å‹ç¼©çš„æ–‡ä»¶
 
-         * @param base Ñ¹ËõµÄ¸ùÄ¿Â¼
+         * @param base å‹ç¼©çš„æ ¹ç›®å½•
 
          */
 
@@ -121,7 +121,7 @@
 
                 out.putNextEntry(new ZipEntry(base));
 
-                log.debug("Ìí¼ÓÑ¹ËõÎÄ¼ş£º" + base);
+                log.debug("æ·»åŠ å‹ç¼©æ–‡ä»¶ï¼š" + base);
 
                 FileInputStream in = new FileInputStream(file);
 
@@ -143,11 +143,11 @@
 
         /**
 
-         * ½âÑ¹zipÎÄ¼ş
+         * è§£å‹zipæ–‡ä»¶
 
-         * @param zipFileName ´ı½âÑ¹µÄzipÎÄ¼şÂ·¾¶£¬ÀıÈç£ºc:\\a.zip
+         * @param zipFileName å¾…è§£å‹çš„zipæ–‡ä»¶è·¯å¾„ï¼Œä¾‹å¦‚ï¼šc:\\a.zip
 
-         * @param outputDirectory ½âÑ¹Ä¿±êÎÄ¼ş¼Ğ,ÀıÈç£ºc:\\a\
+         * @param outputDirectory è§£å‹ç›®æ ‡æ–‡ä»¶å¤¹,ä¾‹å¦‚ï¼šc:\\a\
 
          */
 
@@ -169,7 +169,7 @@
 
                     zipEntry = (ZipEntry) e.nextElement();
 
-                    log.debug("½âÑ¹£º" + zipEntry.getName());
+                    log.debug("è§£å‹ï¼š" + zipEntry.getName());
 
                     if (zipEntry.isDirectory()) {
 
@@ -181,7 +181,7 @@
 
                         f.mkdir();
 
-                        log.debug("´´½¨Ä¿Â¼£º" + outputDirectory + File.separator + name);
+                        log.debug("åˆ›å»ºç›®å½•ï¼š" + outputDirectory + File.separator + name);
 
                     } else {
 
@@ -237,7 +237,7 @@
 
                 zipFile.close();
 
-                log.debug("½âÑ¹Íê³É£¡");
+                log.debug("è§£å‹å®Œæˆï¼");
 
             }
 
@@ -289,11 +289,11 @@
 
         /**
 
-         * ¿½±´ÎÄ¼ş¼ĞÖĞµÄËùÓĞÎÄ¼şµ½ÁíÍâÒ»¸öÎÄ¼ş¼Ğ
+         * æ‹·è´æ–‡ä»¶å¤¹ä¸­çš„æ‰€æœ‰æ–‡ä»¶åˆ°å¦å¤–ä¸€ä¸ªæ–‡ä»¶å¤¹
 
-         * @param srcDirector Ô´ÎÄ¼ş¼Ğ
+         * @param srcDirector æºæ–‡ä»¶å¤¹
 
-         * @param desDirector Ä¿±êÎÄ¼ş¼Ğ
+         * @param desDirector ç›®æ ‡æ–‡ä»¶å¤¹
 
          */
 
@@ -309,7 +309,7 @@
 
                 if (file[i].isFile()) {
 
-                    log.debug("¿½±´£º" + file[i].getAbsolutePath() + "-->" + desDirector + "/" + file[i].getName());
+                    log.debug("æ‹·è´ï¼š" + file[i].getAbsolutePath() + "-->" + desDirector + "/" + file[i].getName());
 
                     FileInputStream input = new FileInputStream(file[i]);
 
@@ -335,7 +335,7 @@
 
                 if (file[i].isDirectory()) {
 
-                    log.debug("¿½±´£º" + file[i].getAbsolutePath() + "-->" + desDirector + "/" + file[i].getName());
+                    log.debug("æ‹·è´ï¼š" + file[i].getAbsolutePath() + "-->" + desDirector + "/" + file[i].getName());
 
                     copyFileWithDirector(srcDirector + "/" + file[i].getName(), desDirector + "/" + file[i].getName());
 
@@ -349,9 +349,9 @@
 
         /**
 
-         * É¾³ıÎÄ¼ş¼Ğ
+         * åˆ é™¤æ–‡ä»¶å¤¹
 
-         * @param folderPath folderPath ÎÄ¼ş¼ĞÍêÕû¾ø¶ÔÂ·¾¶
+         * @param folderPath folderPath æ–‡ä»¶å¤¹å®Œæ•´ç»å¯¹è·¯å¾„
 
          */
 
@@ -359,7 +359,7 @@
 
  
 
-            //É¾³ıÍêÀïÃæËùÓĞÄÚÈİ
+            //åˆ é™¤å®Œé‡Œé¢æ‰€æœ‰å†…å®¹
 
             delAllFile(folderPath);
 
@@ -369,7 +369,7 @@
 
             File myFilePath = new File(filePath);
 
-            //É¾³ı¿ÕÎÄ¼ş¼Ğ
+            //åˆ é™¤ç©ºæ–‡ä»¶å¤¹
 
             myFilePath.delete();
 
@@ -379,9 +379,9 @@
 
         /**
 
-         * É¾³ıÖ¸¶¨ÎÄ¼ş¼ĞÏÂËùÓĞÎÄ¼ş
+         * åˆ é™¤æŒ‡å®šæ–‡ä»¶å¤¹ä¸‹æ‰€æœ‰æ–‡ä»¶
 
-         * @param path ÎÄ¼ş¼ĞÍêÕû¾ø¶ÔÂ·¾¶
+         * @param path æ–‡ä»¶å¤¹å®Œæ•´ç»å¯¹è·¯å¾„
 
          */
 
@@ -429,11 +429,11 @@
 
                 if (temp.isDirectory()) {
 
-                    //ÏÈÉ¾³ıÎÄ¼ş¼ĞÀïÃæµÄÎÄ¼ş
+                    //å…ˆåˆ é™¤æ–‡ä»¶å¤¹é‡Œé¢çš„æ–‡ä»¶
 
                     delAllFile(path + "/" + tempList[i]);
 
-                    //ÔÙÉ¾³ı¿ÕÎÄ¼ş¼Ğ
+                    //å†åˆ é™¤ç©ºæ–‡ä»¶å¤¹
 
                     delFolder(path + "/" + tempList[i]);
 

@@ -1,4 +1,4 @@
-package com.hundsun.network.melody.common.util;
+ï»¿package com.hundsun.network.melody.common.util;
 
 import java.sql.Timestamp;
 import java.text.ParseException;
@@ -27,15 +27,15 @@ public class DateUtil {
     public DateUtil() {
     }
 
-    //TimestampºÍStringÖ®¼ä×ª»»µÄº¯Êı£º
+    //Timestampå’ŒStringä¹‹é—´è½¬æ¢çš„å‡½æ•°ï¼š
     public static String getTimestampToString(Timestamp obj) {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//¶¨Òå¸ñÊ½£¬²»ÏÔÊ¾ºÁÃë
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//å®šä¹‰æ ¼å¼ï¼Œä¸æ˜¾ç¤ºæ¯«ç§’
         String str = df.format(obj);
         return str;
     }
 
     /*
-     * ×Ô¶¨Òå ×ª»»Ä£Ê½½«Timestamp Êä³ö
+     * è‡ªå®šä¹‰ è½¬æ¢æ¨¡å¼å°†Timestamp è¾“å‡º
      */
     public static String getTimestampToString(String formatPattern, Timestamp obj) {
         SimpleDateFormat df = new SimpleDateFormat(formatPattern);
@@ -43,7 +43,7 @@ public class DateUtil {
         return str;
     }
 
-    //String×ª»¯ÎªTimestamp:
+    //Stringè½¬åŒ–ä¸ºTimestamp:
     public static Timestamp getStringToTimestamp(String str) {
         Timestamp ts = Timestamp.valueOf(str);
         return ts;
@@ -227,7 +227,7 @@ public class DateUtil {
     }
 
     /**
-     * È¡µÃ´ÓstartDate¿ªÊ¼µÄÇ°(Õı)/ºó(¸º)dayÌì
+     * å–å¾—ä»startDateå¼€å§‹çš„å‰(æ­£)/å(è´Ÿ)dayå¤©
      * @param startDate
      * @param day
      * @return
@@ -245,9 +245,9 @@ public class DateUtil {
     }
 
     /**
-     * ¸ù¾İÈÕÆÚ»ñÈ¡ĞÇÆÚ¼¸
+     * æ ¹æ®æ—¥æœŸè·å–æ˜ŸæœŸå‡ 
      *
-     * @param date java.util.Date¶ÔÏó,²»ÄÜÎªnull
+     * @param date java.util.Dateå¯¹è±¡,ä¸èƒ½ä¸ºnull
      * @return
      */
     public static int getDay(Date date) {
@@ -257,8 +257,8 @@ public class DateUtil {
     }
 
     /**
-     * Í³¼ÆÁ½¸öÊ±¼ä²î£¬·µ»ØµÄÊÇÌìÊı(¼´24Ğ¡Ê±ËãÒ»Ìì£¬ÉÙÓÚ24Ğ¡Ê±¾ÍÎª0£¬ÓÃÕâ¸öµÄÊ±ºò×îºÃ°ÑĞ¡Ê±¡¢·ÖÖÓµÈÈ¥µô)
-     * @param begin ¿ªÊ¼Ê±¼ä
+     * ç»Ÿè®¡ä¸¤ä¸ªæ—¶é—´å·®ï¼Œè¿”å›çš„æ˜¯å¤©æ•°(å³24å°æ—¶ç®—ä¸€å¤©ï¼Œå°‘äº24å°æ—¶å°±ä¸º0ï¼Œç”¨è¿™ä¸ªçš„æ—¶å€™æœ€å¥½æŠŠå°æ—¶ã€åˆ†é’Ÿç­‰å»æ‰)
+     * @param begin å¼€å§‹æ—¶é—´
      * @param end
      * @return
      */

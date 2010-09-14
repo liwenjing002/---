@@ -1,4 +1,4 @@
-ĞèÒªÒ»Ğ©jar£¬×Ô¼ºÈ¥down°É
+ï»¿éœ€è¦ä¸€äº›jarï¼Œè‡ªå·±å»downå§
 
 /*
 * created by intellij idea.
@@ -11,7 +11,7 @@
 /*****  readxml.java  **********************
 *this is a javabean.
 *this bean read a xml file from a url,and return a xmldom
-*[¹¤¾ßÀà] ¶ÁÈ¡¡¢´òÓ¡Êä³ö¡¢±£´æxml
+*[å·¥å…·ç±»] è¯»å–ã€æ‰“å°è¾“å‡ºã€ä¿å­˜xml
 ***** created by xiao yusong  2001-11-30 ****
 */
 package com.chinacountry.util;

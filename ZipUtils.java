@@ -1,7 +1,7 @@
-[java]Ò»¸öÑ¹Ëõ¹¤¾ßÀà zip2008Äê05ÔÂ28ÈÕ ĞÇÆÚÈı 17:48/*
+ï»¿[java]ä¸€ä¸ªå‹ç¼©å·¥å…·ç±» zip2008å¹´05æœˆ28æ—¥ æ˜ŸæœŸä¸‰ 17:48/*
 * Zip.java
 *
-* Created on 2008Äê4ÔÂ2ÈÕ, ÏÂÎç2:20
+* Created on 2008å¹´4æœˆ2æ—¥, ä¸‹åˆ2:20
 *
 * To change this template, choose Tools | Template Manager
 * and open the template in the editor.
@@ -61,7 +61,7 @@ public class ZipUtils {
     
     public static void main(String argv[]) {
         // File f= new File("d:\\111\\");
-        String[] filenames = new String[]{"E:/mnpdata/ad/temp/1209014565259/ÓôÏã.jpg"};
+        String[] filenames = new String[]{"E:/mnpdata/ad/temp/1209014565259/éƒé¦™.jpg"};
         zip(filenames,"c:/myfui.zip");
     }
 }

@@ -1,4 +1,4 @@
-package com.common.time;
+﻿package com.common.time;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;

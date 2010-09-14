@@ -1,4 +1,4 @@
-import java.beans.XMLDecoder; 
+﻿import java.beans.XMLDecoder; 
 import java.beans.XMLEncoder; 
 import java.io.File; 
 import java.io.FileInputStream; 
@@ -8,56 +8,56 @@ import java.io.IOException;
 import java.util.ArrayList; 
 import java.util.List; 
 /** 
- * <title>ʹ��XML�ļ���ȡ�����л��Ķ������</title> 
- * <description>�ṩ����Ͷ�ȡ�ķ���</description> 
- * @author ��� 
- * <copyright>�廪��ѧ�������̿����о�Ժ@2005</copyright> 
+ * <title>使用XML文件存取可序列化的对象的类</title> 
+ * <description>提供保存和读取的方法</description> 
+ * @author 殷晋 
+ * <copyright>清华大学汽车工程开发研究院@2005</copyright> 
  * @version 1.0 
  * 2005-8-5 16:44:49 
  */ 
 public class ObjectToXMLUtil 
 { 
  /** 
-  * ��java�Ŀ����л��Ķ���(ʵ��Serializable�ӿ�)���л����浽XML�ļ�����,�����һ�α����������л��������ü��Ͻ��з�װ 
-  * ����ʱ���������ڵĶ���ԭ����XML�ļ����� 
-  * @param obj Ҫ���л��Ŀ����л��Ķ��� 
-  * @param fileName ����ȫ�ı���·�����ļ���  
-  * @throws FileNotFoundException ָ��λ�õ��ļ������� 
-  * @throws IOException ���ʱ�����쳣 
-  * @throws Exception ��������ʱ�쳣 
+  * 把java的可序列化的对象(实现Serializable接口)序列化保存到XML文件里面,如果想一次保存多个可序列化对象请用集合进行封装 
+  * 保存时将会用现在的对象原来的XML文件内容 
+  * @param obj 要序列化的可序列化的对象 
+  * @param fileName 带完全的保存路径的文件名  
+  * @throws FileNotFoundException 指定位置的文件不存在 
+  * @throws IOException 输出时发生异常 
+  * @throws Exception 其他运行时异常 
   */ 
  public static void objectXmlEncoder(Object obj,String fileName) 
   throws FileNotFoundException,IOException,Exception 
  {   
-  //��������ļ� 
+  //创建输出文件 
   File fo = new File(fileName); 
-  //�ļ�������,�ʹ������ļ� 
+  //文件不存在,就创建该文件 
   if(!fo.exists()) 
   { 
-   //�ȴ����ļ���Ŀ¼ 
+   //先创建文件的目录 
       String path = fileName.substring(0,fileName.lastIndexOf('.')); 
       File pFile = new File(path); 
       pFile.mkdirs();          
   } 
-  //�����ļ������ 
+  //创建文件输出流 
   FileOutputStream fos = new FileOutputStream(fo); 
-  //����XML�ļ����������ʵ�� 
+  //创建XML文件对象输出类实例 
   XMLEncoder encoder = new XMLEncoder(fos);   
-  //�������л������XML�ļ� 
+  //对象序列化输出到XML文件 
   encoder.writeObject(obj); 
   encoder.flush();  
-  //�ر����л����� 
+  //关闭序列化工具 
   encoder.close(); 
-  //�ر������ 
+  //关闭输出流 
   fos.close();     
  }  
  /** 
-  * ��ȡ��objSourceָ����XML�ļ��е����л�����Ķ���,���صĽ��������List��װ 
-  * @param objSource ��ȫ���ļ�·�����ļ�ȫ�� 
-  * @return ��XML�ļ����汣��Ķ��󹹳ɵ�List�б�(������һ�����߶�������л�����Ķ���)   
-  * @throws FileNotFoundException ָ���Ķ����ȡ��Դ������ 
-  * @throws IOException ��ȡ�������� 
-  * @throws Exception ��������ʱ�쳣���� 
+  * 读取由objSource指定的XML文件中的序列化保存的对象,返回的结果经过了List封装 
+  * @param objSource 带全部文件路径的文件全名 
+  * @return 由XML文件里面保存的对象构成的List列表(可能是一个或者多个的序列化保存的对象)   
+  * @throws FileNotFoundException 指定的对象读取资源不存在 
+  * @throws IOException 读取发生错误 
+  * @throws Exception 其他运行时异常发生 
   */ 
  public static List objectXmlDecoder(String objSource)  
   throws FileNotFoundException,IOException,Exception 

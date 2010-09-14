@@ -1,4 +1,4 @@
-XML¹¤¾ßÀà
+ï»¿XMLå·¥å…·ç±»
 package com.company.cpc.offlinelog.dao;
 import java.io.File;
 import java.io.FileReader;
@@ -9,7 +9,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.List;
-//ĞèÒªÒıÓÃcastor.jarÎÄ¼ş
+//éœ€è¦å¼•ç”¨castor.jaræ–‡ä»¶
 import org.exolab.castor.mapping.Mapping;
 import org.exolab.castor.mapping.MappingException;
 import org.exolab.castor.xml.MarshalException;
@@ -19,16 +19,16 @@ import org.exolab.castor.xml.ValidationException;
 import org.xml.sax.InputSource;
 import com.zte.ecc.util.tracer.Debug;
 /**
- *  Àà Ãû ³Æ:XmlFileManager
- *  ÄÚÈİÕªÒª£º¸ÃÀàÊÇXML¹¤¾ßÀà
+ *  ç±» å ç§°:XmlFileManager
+ *  å†…å®¹æ‘˜è¦ï¼šè¯¥ç±»æ˜¯XMLå·¥å…·ç±»
  */
 public class XmlFileManager {
  /**
-  * ·½·¨Ãû³Æ£ºobjectListToXMLString
-  * ÄÚÈİÕªÒª£º°Ñ¶ÔÏó±à×é³ÉXML
-  * @param mappingXMLString Ó³ÉäµÄXML´®
-  * @param containerClass   ±à×éÀà 
-  * @return String ·µ»ØXML
+  * æ–¹æ³•åç§°ï¼šobjectListToXMLString
+  * å†…å®¹æ‘˜è¦ï¼šæŠŠå¯¹è±¡ç¼–ç»„æˆXML
+  * @param mappingXMLString æ˜ å°„çš„XMLä¸²
+  * @param containerClass   ç¼–ç»„ç±» 
+  * @return String è¿”å›XML
   * @throws IOException
   * @throws MappingException
   * @throws MarshalException
@@ -42,15 +42,15 @@ public class XmlFileManager {
    Debug.println("containerClass  is NULL!!!!!");
    return "";
   }
-  //×¼±¸Mapping
+  //å‡†å¤‡Mapping
   Mapping mapping = new Mapping();
   Reader reader = new StringReader(mappingXMLString);
   InputSource is = new InputSource(reader);
   mapping.loadMapping(is);
-  //×¼±¸Writer
+  //å‡†å¤‡Writer
   StringWriter writer = new StringWriter();
   Marshaller marshaller = new Marshaller(writer);
-  //¿ªÊ¼±à×é
+  //å¼€å§‹ç¼–ç»„
   marshaller.setMapping(mapping);
   marshaller.setEncoding("gb2312");
   marshaller.marshal(containerClass);
@@ -60,10 +60,10 @@ public class XmlFileManager {
  }
  /**
   * 
-  * ·½·¨Ãû³Æ£ºXmlToObjectList
-  * ÄÚÈİÕªÒª£º°ÑXML½â×é³É¶ÔÏó
-  * @param mappingXMLString Ó³ÉäµÄXML´®
-  * @param xmlString ÃèÊöÊı¾İµÄXML´®
+  * æ–¹æ³•åç§°ï¼šXmlToObjectList
+  * å†…å®¹æ‘˜è¦ï¼šæŠŠXMLè§£ç»„æˆå¯¹è±¡
+  * @param mappingXMLString æ˜ å°„çš„XMLä¸²
+  * @param xmlString æè¿°æ•°æ®çš„XMLä¸²
   * @return Object
   * @throws IOException
   * @throws MappingException
@@ -74,14 +74,14 @@ public class XmlFileManager {
   String mappingXMLString,
   String xmlString)
   throws IOException, MappingException, MarshalException, ValidationException {
-  //×¼±¸Mapping
+  //å‡†å¤‡Mapping
   StringReader mapingReader = new StringReader(mappingXMLString);
   InputSource is = new InputSource(mapingReader);
   Mapping mapping = new Mapping();
   mapping.loadMapping(is);
-  //×¼±¸Reader
+  //å‡†å¤‡Reader
   Reader reader = new StringReader(xmlString);
-  //¿ªÊ¼½â×é 
+  //å¼€å§‹è§£ç»„ 
   Unmarshaller unmarshaller = new Unmarshaller(mapping);
   Object containerClass = unmarshaller.unmarshal(reader);
   reader.close();
@@ -89,10 +89,10 @@ public class XmlFileManager {
  }
  /**
   * 
-  * ·½·¨Ãû³Æ£ºsaveToXMLFile
-  * ÄÚÈİÕªÒª£º°Ñ¶ÔÏó±à×é³ÉXMLÎÄ¼ş
-  * @param xmlFileName ÎÄ¼şÃû
-  * @param mappingFileName  Ó³ÉäÎÄ¼şÃû
+  * æ–¹æ³•åç§°ï¼šsaveToXMLFile
+  * å†…å®¹æ‘˜è¦ï¼šæŠŠå¯¹è±¡ç¼–ç»„æˆXMLæ–‡ä»¶
+  * @param xmlFileName æ–‡ä»¶å
+  * @param mappingFileName  æ˜ å°„æ–‡ä»¶å
   * @param containerClass  
   * @throws IOException
   * @throws MappingException
@@ -108,14 +108,14 @@ public class XmlFileManager {
    Systen.out.println("containerClass  is NULL!!!!!");
    return;
   }
-  //×¼±¸Mapping 
+  //å‡†å¤‡Mapping 
   Mapping mapping = new Mapping();
   mapping.loadMapping(mappingFileName);
-  //×¼±¸Writer
+  //å‡†å¤‡Writer
   File file = new File(xmlFileName);
   Writer writer = new FileWriter(file);
   Marshaller marshaller = new Marshaller(writer);
-  //¿ªÊ¼±à×é
+  //å¼€å§‹ç¼–ç»„
   marshaller.setMapping(mapping);
   marshaller.setEncoding("gb2312");
   marshaller.marshal(containerClass);
@@ -123,8 +123,8 @@ public class XmlFileManager {
  }
  /**
   * 
-  * ·½·¨Ãû³Æ£ºloadFromXMLFile
-  * ÄÚÈİÕªÒª£º°ÑXMLÎÄ¼ş½â×é³É¶ÔÏó
+  * æ–¹æ³•åç§°ï¼šloadFromXMLFile
+  * å†…å®¹æ‘˜è¦ï¼šæŠŠXMLæ–‡ä»¶è§£ç»„æˆå¯¹è±¡
   * @param xmlFileName
   * @param mappingFileName
   * @return
@@ -137,12 +137,12 @@ public class XmlFileManager {
   String xmlFileName,
   String mappingFileName)
   throws IOException, MappingException, MarshalException, ValidationException {
-  //×¼±¸Mapping
+  //å‡†å¤‡Mapping
   Mapping mapping = new Mapping();
   mapping.loadMapping(mappingFileName);
-  //×¼±¸Reader
+  //å‡†å¤‡Reader
   Reader reader = new FileReader(xmlFileName);
-  //¿ªÊ¼½â×é 
+  //å¼€å§‹è§£ç»„ 
   Unmarshaller unmarshaller = new Unmarshaller(mapping);
   Object containerClass = unmarshaller.unmarshal(reader);
   reader.close();
@@ -150,8 +150,8 @@ public class XmlFileManager {
  }
  /**
   * 
-  * ·½·¨Ãû³Æ£ºreaderToString
-  * ÄÚÈİÕªÒª£º°ÑReaderÁ÷ÖĞµÄÊı¾İ±äÎª×Ö·û´®
+  * æ–¹æ³•åç§°ï¼šreaderToString
+  * å†…å®¹æ‘˜è¦ï¼šæŠŠReaderæµä¸­çš„æ•°æ®å˜ä¸ºå­—ç¬¦ä¸²
   * @param reader
   * @param bfferSize
   * @return
@@ -166,17 +166,17 @@ public class XmlFileManager {
     sb.append(b, 0, n);
    }
   } catch (IOException e) {
-   // TODO ×Ô¶¯Éú³É catch ¿é
+   // TODO è‡ªåŠ¨ç”Ÿæˆ catch å—
    e.printStackTrace();
   }
   return sb.toString();
  }
  /**
-  * ·½·¨Ãû³Æ£ºobjectListToXMLString
-  * ÄÚÈİÕªÒª£º°Ñ¶ÔÏó±à×é³ÉXML
-  * @param mappingFileName Ó³ÉäÎÄ¼şÃû
-  * @param containerClass   ±à×éÀà 
-  * @return String ·µ»ØXML
+  * æ–¹æ³•åç§°ï¼šobjectListToXMLString
+  * å†…å®¹æ‘˜è¦ï¼šæŠŠå¯¹è±¡ç¼–ç»„æˆXML
+  * @param mappingFileName æ˜ å°„æ–‡ä»¶å
+  * @param containerClass   ç¼–ç»„ç±» 
+  * @return String è¿”å›XML
   * @throws IOException
   * @throws MappingException
   * @throws MarshalException
@@ -191,14 +191,14 @@ public class XmlFileManager {
    return "";
   }
   
-  //×¼±¸Mapping
+  //å‡†å¤‡Mapping
   Mapping mapping = new Mapping();
   mapping.loadMapping(mappingFileName);
-  //×¼±¸Writer
+  //å‡†å¤‡Writer
   StringWriter writer = new StringWriter();
   Marshaller marshaller = new Marshaller(writer);
   
-  //¿ªÊ¼±à×é
+  //å¼€å§‹ç¼–ç»„
   marshaller.setMapping(mapping);
   marshaller.setEncoding("gb2312");
   marshaller.marshal(containerClass);
@@ -209,10 +209,10 @@ public class XmlFileManager {
  }
  /**
   * 
-  * ·½·¨Ãû³Æ£ºXmlToObjectList
-  * ÄÚÈİÕªÒª£º°ÑXML½â×é³É¶ÔÏó
-  * @param mappingFileName Ó³ÉäÎÄ¼şÃû
-  * @param xmlString ÃèÊöÊı¾İµÄXML´®
+  * æ–¹æ³•åç§°ï¼šXmlToObjectList
+  * å†…å®¹æ‘˜è¦ï¼šæŠŠXMLè§£ç»„æˆå¯¹è±¡
+  * @param mappingFileName æ˜ å°„æ–‡ä»¶å
+  * @param xmlString æè¿°æ•°æ®çš„XMLä¸²
   * @return
   * @throws IOException
   * @throws MappingException
@@ -223,21 +223,21 @@ public class XmlFileManager {
   String mappingFileName,
   String xmlString)
   throws IOException, MappingException, MarshalException, ValidationException {
-  //×¼±¸Mapping
+  //å‡†å¤‡Mapping
   Mapping mapping = new Mapping();
   mapping.loadMapping(mappingFileName);
-  //×¼±¸Reader
+  //å‡†å¤‡Reader
   Reader reader = new StringReader(xmlString);
-  //¿ªÊ¼½â×é 
+  //å¼€å§‹è§£ç»„ 
   Unmarshaller unmarshaller = new Unmarshaller(mapping);
   Object containerClass = unmarshaller.unmarshal(reader);
   reader.close();
   return containerClass;
  }
  /**
-  * ·½·¨Ãû³Æ£ºXmlToObjectList
-  * ÄÚÈİÕªÒª£ºµÃµ½×ÊÔ´ÎÄ¼şµÄ¾ø¶ÔÂ·¾¶ÎÄ¼şÃû
-  * @param sResourceName ×ÊÔ´Ãû³Æ
+  * æ–¹æ³•åç§°ï¼šXmlToObjectList
+  * å†…å®¹æ‘˜è¦ï¼šå¾—åˆ°èµ„æºæ–‡ä»¶çš„ç»å¯¹è·¯å¾„æ–‡ä»¶å
+  * @param sResourceName èµ„æºåç§°
   * @return String
   */
  public static String getResourceFilePath(String sResourceName) {

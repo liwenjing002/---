@@ -1,70 +1,70 @@
-Ê¹ÓÃJava³ÌĞòÀ´ÊµÏÖHTTPÎÄ¼şµÄ¶ÓÁĞÏÂÔØ  
+ï»¿ä½¿ç”¨Javaç¨‹åºæ¥å®ç°HTTPæ–‡ä»¶çš„é˜Ÿåˆ—ä¸‹è½½  
  
-·¢²¼Ê±¼ä£º2007.07.27 06:30     À´Ô´£ºÈüµÏÍø    ×÷Õß£ºdxaw 
+å‘å¸ƒæ—¶é—´ï¼š2007.07.27 06:30     æ¥æºï¼šèµ›è¿ªç½‘    ä½œè€…ï¼šdxaw 
 
-ĞòÑÔ 
+åºè¨€ 
 
-Ğí¶àÓÃ»§¿ÉÄÜ»áÓöµ½ÕâÑùµÄÇé¿ö£ºÔÚÍøÕ¾ÉÏ·¢ÏÖÒ»¸öºÜºÃµÄ×ÊÔ´£¬µ«ÊÇÕâ¸ö×ÊÔ´ÊÇ·Ö³ÉÁËºÜ¶à¸öÎÄ¼ş´æ·ÅµÄ£¬Èç¹ûÏë°ÑËü±£´æµ½±¾µØ£¬Ö»ÓĞ¿¿ÓÃ»§µã»÷Áí´æÀ´Íê³É±£´æ£¬Èç¹û×ÊÔ´·ÖÁË¼¸°ÙÉõÖÁÉÏÇ§ÉÏÍò£¬ÄÇ¼òÖ±ÊÇ¸öÔÖÄÑ¡£ 
+è®¸å¤šç”¨æˆ·å¯èƒ½ä¼šé‡åˆ°è¿™æ ·çš„æƒ…å†µï¼šåœ¨ç½‘ç«™ä¸Šå‘ç°ä¸€ä¸ªå¾ˆå¥½çš„èµ„æºï¼Œä½†æ˜¯è¿™ä¸ªèµ„æºæ˜¯åˆ†æˆäº†å¾ˆå¤šä¸ªæ–‡ä»¶å­˜æ”¾çš„ï¼Œå¦‚æœæƒ³æŠŠå®ƒä¿å­˜åˆ°æœ¬åœ°ï¼Œåªæœ‰é ç”¨æˆ·ç‚¹å‡»å¦å­˜æ¥å®Œæˆä¿å­˜ï¼Œå¦‚æœèµ„æºåˆ†äº†å‡ ç™¾ç”šè‡³ä¸Šåƒä¸Šä¸‡ï¼Œé‚£ç®€ç›´æ˜¯ä¸ªç¾éš¾ã€‚ 
 
-ÔÚInternetÉÏºÜ¶àµÄ×ÊÔ´·Ö³É¶à¸öÎÄ¼ş´æ·ÅÊ±£¬ËüµÄÎÄ¼şÃüÃûÊÇÓĞÒ»¶¨µÄ¹æÔòµÄ£»ÕıÒòÈç´Ë£¬ÎÒÃÇ¾Í¿ÉÒÔÓÃ³ÌĞòÀ´Íê³ÉÕâ¸ö×ÊÔ´µÄÍêÈ«ÏÂÔØ¡£ 
+åœ¨Internetä¸Šå¾ˆå¤šçš„èµ„æºåˆ†æˆå¤šä¸ªæ–‡ä»¶å­˜æ”¾æ—¶ï¼Œå®ƒçš„æ–‡ä»¶å‘½åæ˜¯æœ‰ä¸€å®šçš„è§„åˆ™çš„ï¼›æ­£å› å¦‚æ­¤ï¼Œæˆ‘ä»¬å°±å¯ä»¥ç”¨ç¨‹åºæ¥å®Œæˆè¿™ä¸ªèµ„æºçš„å®Œå…¨ä¸‹è½½ã€‚ 
 
-1. »ù´¡ÖªÊ¶ 
+1. åŸºç¡€çŸ¥è¯† 
 
-ÔÚInternetÉÏ£¬ÎÒÃÇÒªÏÂÔØÍøÕ¾ÉÏµÄÄ³¸ö×ÊÔ´£¬ÎÒÃÇ»á»ñµÃÒ»¸öURL£¨Uniform Resource Locator£©£¬ËüÊÇÒ»¸ö·şÎñÆ÷×ÊÔ´¶¨Î»µÄÃèÊö£¬ÏÂÔØµÄ¹ı³Ì×ÜÊÇÈçÏÂ²½Öè: 
+åœ¨Internetä¸Šï¼Œæˆ‘ä»¬è¦ä¸‹è½½ç½‘ç«™ä¸Šçš„æŸä¸ªèµ„æºï¼Œæˆ‘ä»¬ä¼šè·å¾—ä¸€ä¸ªURLï¼ˆUniform Resource Locatorï¼‰ï¼Œå®ƒæ˜¯ä¸€ä¸ªæœåŠ¡å™¨èµ„æºå®šä½çš„æè¿°ï¼Œä¸‹è½½çš„è¿‡ç¨‹æ€»æ˜¯å¦‚ä¸‹æ­¥éª¤: 
 
-²½Öè1:¿Í»§¶Ë·¢ÆğÁ¬½ÓÇëÇóÒ»¸öURL 
+æ­¥éª¤1:å®¢æˆ·ç«¯å‘èµ·è¿æ¥è¯·æ±‚ä¸€ä¸ªURL 
 
-²½Öè2:·şÎñÆ÷½âÎöURL£¬²¢½«Ö¸¶¨µÄ×ÊÔ´·µ»ØÒ»¸öÊäÈëÁ÷¸ø¿Í»§ 
+æ­¥éª¤2:æœåŠ¡å™¨è§£æURLï¼Œå¹¶å°†æŒ‡å®šçš„èµ„æºè¿”å›ä¸€ä¸ªè¾“å…¥æµç»™å®¢æˆ· 
 
-²½Öè3:¿Í»§¶Ë½ÓÊÕÊäÈëÁ÷£¬½«Á÷ÖĞµÄÄÚÈİ´æµ½ÎÄ¼ş 
+æ­¥éª¤3:å®¢æˆ·ç«¯æ¥æ”¶è¾“å…¥æµï¼Œå°†æµä¸­çš„å†…å®¹å­˜åˆ°æ–‡ä»¶ 
 
-2. ÍøÂçÁ¬½ÓµÄ½¨Á¢ 
+2. ç½‘ç»œè¿æ¥çš„å»ºç«‹ 
 
-JavaÌá¹©ÁË¶ÔURL·ÃÎÊºÍ´óÁ¿µÄÁ÷²Ù×÷µÄµÄAPI£¬ÎÒÃÇ¿ÉÒÔºÜÈİÒ×µÄÍê³É¶ÔÍøÂçÉÏ×ÊÔ´µÄ´æÈ¡,ÏÂÃæµÄ´úÂë¶Î¾ÍÍê³ÉÁË¶ÔÒ»¸öÍøÕ¾µÄ×ÊÔ´½øĞĞ·ÃÎÊ: 
+Javaæä¾›äº†å¯¹URLè®¿é—®å’Œå¤§é‡çš„æµæ“ä½œçš„çš„APIï¼Œæˆ‘ä»¬å¯ä»¥å¾ˆå®¹æ˜“çš„å®Œæˆå¯¹ç½‘ç»œä¸Šèµ„æºçš„å­˜å–,ä¸‹é¢çš„ä»£ç æ®µå°±å®Œæˆäº†å¯¹ä¸€ä¸ªç½‘ç«™çš„èµ„æºè¿›è¡Œè®¿é—®: 
 
 
 ......
-destUrl="http://www.ebook.com/java/ÍøÂç±à³Ì001.zip";
+destUrl="http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹001.zip";
 url = new URL(destUrl);
 httpUrl = (HttpURLConnection) url.openConnection();
-//Á¬½ÓÖ¸¶¨µÄÍøÂç×ÊÔ´
+//è¿æ¥æŒ‡å®šçš„ç½‘ç»œèµ„æº
 httpUrl.connect();
-//»ñÈ¡ÍøÂçÊäÈëÁ÷
+//è·å–ç½‘ç»œè¾“å…¥æµ
 bis = new BufferedInputStream(httpUrl.getInputStream());
 ......
  
 
-3. ´úÀíµÄ·ÃÎÊ 
+3. ä»£ç†çš„è®¿é—® 
 
-Java ÖĞÍ¨¹ı´úÀí·şÎñÆ÷·ÃÎÊÍâÍøµÄ·½·¨ÒÑ¾­ÊÇÊÀÈË½ÔÖªµÄÃØÃÜÁË¡£ÕâÀï¾Í²»ÔÙ¶àÃèÊöÁË£¬·ÃÎÊµÄJAVA´úÂëÈçÏÂ: 
+Java ä¸­é€šè¿‡ä»£ç†æœåŠ¡å™¨è®¿é—®å¤–ç½‘çš„æ–¹æ³•å·²ç»æ˜¯ä¸–äººçš†çŸ¥çš„ç§˜å¯†äº†ã€‚è¿™é‡Œå°±ä¸å†å¤šæè¿°äº†ï¼Œè®¿é—®çš„JAVAä»£ç å¦‚ä¸‹: 
 
 
-//ÉèÖÃ´úÀí·şÎñÆ÷
+//è®¾ç½®ä»£ç†æœåŠ¡å™¨
 System.getProperties().put("proxySet", "true");
 System.getProperties().put("proxyHost", "10.154.134.110");
 System.getProperties().put("proxyPort", "8080");
  
 
-4. ÍøÂç×ÊÔ´µÄ±£´æ 
+4. ç½‘ç»œèµ„æºçš„ä¿å­˜ 
 
-ÔÚÉÏ½ÚÖĞ£¬ÎÒÃÇÒÑ¾­»ñÈ¡ÁËÖ¸¶¨ÍøÂç×ÊÔ´µÄÊäÈëÁ÷£¬½ÓÏÂÀ´ÎÒÃÇÒªÍê³ÉµÄ¾ÍÊÇ¶ÁÈ¡ÊäÈëÁ÷ÖĞµÄËùÒÔÄÚÈİ£¬²¢½«Æä±£´æÔÚÎÄ¼şÖĞ¡£Ê¾Àı´úÂë: 
+åœ¨ä¸ŠèŠ‚ä¸­ï¼Œæˆ‘ä»¬å·²ç»è·å–äº†æŒ‡å®šç½‘ç»œèµ„æºçš„è¾“å…¥æµï¼Œæ¥ä¸‹æ¥æˆ‘ä»¬è¦å®Œæˆçš„å°±æ˜¯è¯»å–è¾“å…¥æµä¸­çš„æ‰€ä»¥å†…å®¹ï¼Œå¹¶å°†å…¶ä¿å­˜åœ¨æ–‡ä»¶ä¸­ã€‚ç¤ºä¾‹ä»£ç : 
 
 
 ......
 fos = new FileOutputStream(fileName);
 if (this.DEBUG) 
 System.out.println
-("ÕıÔÚ»ñÈ¡Á´½Ó[" + destUrl + "]µÄÄÚÈİ...\n½«Æä±£´æÎªÎÄ¼ş[" + fileName +"]");
+("æ­£åœ¨è·å–é“¾æ¥[" + destUrl + "]çš„å†…å®¹...\nå°†å…¶ä¿å­˜ä¸ºæ–‡ä»¶[" + fileName +"]");
 
-//±£´æÎÄ¼ş
+//ä¿å­˜æ–‡ä»¶
 while ( (size = bis.read(buf)) != -1)
 fos.write(buf, 0, size);
 ......
  
 
-ÉÏÃæµÄÊ¾Àı´úÂë¾Í½«ÍøÂç×ÊÔ´µÄÄÚÈİ±£´æµ½ÁË±¾µØÖ¸¶¨µÄÎÄ¼şÖĞ¡£ 
+ä¸Šé¢çš„ç¤ºä¾‹ä»£ç å°±å°†ç½‘ç»œèµ„æºçš„å†…å®¹ä¿å­˜åˆ°äº†æœ¬åœ°æŒ‡å®šçš„æ–‡ä»¶ä¸­ã€‚ 
 
-5. ´úÂëÇåµ¥ 
+5. ä»£ç æ¸…å• 
 
 
 import java.io.*;
@@ -72,125 +72,125 @@ import java.net.*;
 import java.util.*;
 
 /**
-* £¼p£¾Title: ¸öÈË¿ª·¢µÄAPI£¼/p£¾
-* £¼p£¾Description: ½«Ö¸¶¨µÄHTTPÍøÂç×ÊÔ´ÔÚ±¾µØÒÔÎÄ¼şĞÎÊ½´æ·Å£¼/p£¾
-* £¼p£¾Copyright: Copyright (c) 2004£¼/p£¾
-* £¼p£¾Company: NewSky£¼/p£¾
+* ï¼œpï¼Title: ä¸ªäººå¼€å‘çš„APIï¼œ/pï¼
+* ï¼œpï¼Description: å°†æŒ‡å®šçš„HTTPç½‘ç»œèµ„æºåœ¨æœ¬åœ°ä»¥æ–‡ä»¶å½¢å¼å­˜æ”¾ï¼œ/pï¼
+* ï¼œpï¼Copyright: Copyright (c) 2004ï¼œ/pï¼
+* ï¼œpï¼Company: NewSkyï¼œ/pï¼
 * @author MagicLiao
 * @version 1.0
 */
 public class HttpGet {
 
-¡¡ public final static boolean DEBUG = true;//µ÷ÊÔÓÃ
-¡¡ private static int BUFFER_SIZE = 8096;//»º³åÇø´óĞ¡
-¡¡ private Vector vDownLoad = new Vector();//URLÁĞ±í
-¡¡ private Vector vFileList = new Vector();//ÏÂÔØºóµÄ±£´æÎÄ¼şÃûÁĞ±í
+ã€€ public final static boolean DEBUG = true;//è°ƒè¯•ç”¨
+ã€€ private static int BUFFER_SIZE = 8096;//ç¼“å†²åŒºå¤§å°
+ã€€ private Vector vDownLoad = new Vector();//URLåˆ—è¡¨
+ã€€ private Vector vFileList = new Vector();//ä¸‹è½½åçš„ä¿å­˜æ–‡ä»¶ååˆ—è¡¨
 
-¡¡ /**
-¡¡ * ¹¹Ôì·½·¨
-¡¡ */
-¡¡ public HttpGet() {}
+ã€€ /**
+ã€€ * æ„é€ æ–¹æ³•
+ã€€ */
+ã€€ public HttpGet() {}
 
-¡¡ /**
-¡¡ * Çå³ıÏÂÔØÁĞ±í
-¡¡ */
-¡¡ public void resetList() {
-¡¡¡¡ vDownLoad.clear();
-¡¡¡¡ vFileList.clear();
-¡¡ }
+ã€€ /**
+ã€€ * æ¸…é™¤ä¸‹è½½åˆ—è¡¨
+ã€€ */
+ã€€ public void resetList() {
+ã€€ã€€ vDownLoad.clear();
+ã€€ã€€ vFileList.clear();
+ã€€ }
 
-¡¡ /**
-¡¡ * Ôö¼ÓÏÂÔØÁĞ±íÏî
-¡¡ *
-¡¡ * @param url String
-¡¡ * @param filename String
-¡¡ */
+ã€€ /**
+ã€€ * å¢åŠ ä¸‹è½½åˆ—è¡¨é¡¹
+ã€€ *
+ã€€ * @param url String
+ã€€ * @param filename String
+ã€€ */
 
 public void addItem(String url, String filename) {
-¡¡ vDownLoad.add(url);
-¡¡ vFileList.add(filename);
+ã€€ vDownLoad.add(url);
+ã€€ vFileList.add(filename);
 }
 
-¡¡ /**
-¡¡ * ¸ù¾İÁĞ±íÏÂÔØ×ÊÔ´
-¡¡ */
+ã€€ /**
+ã€€ * æ ¹æ®åˆ—è¡¨ä¸‹è½½èµ„æº
+ã€€ */
 public void downLoadByList() {
-¡¡ String url = null;
-¡¡ String filename = null;
+ã€€ String url = null;
+ã€€ String filename = null;
 
-¡¡ //°´ÁĞ±íË³Ğò±£´æ×ÊÔ´
-¡¡ for (int i = 0; i £¼ vDownLoad.size(); i++) {
-¡¡¡¡ url = (String) vDownLoad.get(i);
-¡¡¡¡ filename = (String) vFileList.get(i);
+ã€€ //æŒ‰åˆ—è¡¨é¡ºåºä¿å­˜èµ„æº
+ã€€ for (int i = 0; i ï¼œ vDownLoad.size(); i++) {
+ã€€ã€€ url = (String) vDownLoad.get(i);
+ã€€ã€€ filename = (String) vFileList.get(i);
 
-¡¡¡¡ try {
-¡¡¡¡¡¡ saveToFile(url, filename);
-¡¡¡¡ }
-¡¡¡¡ catch (IOException err) {
-¡¡¡¡¡¡ if (DEBUG) {
-¡¡¡¡¡¡¡¡ System.out.println("×ÊÔ´[" + url + "]ÏÂÔØÊ§°Ü!!!");
-¡¡¡¡¡¡ }
-¡¡¡¡ }
-¡¡ }
+ã€€ã€€ try {
+ã€€ã€€ã€€ saveToFile(url, filename);
+ã€€ã€€ }
+ã€€ã€€ catch (IOException err) {
+ã€€ã€€ã€€ if (DEBUG) {
+ã€€ã€€ã€€ã€€ System.out.println("èµ„æº[" + url + "]ä¸‹è½½å¤±è´¥!!!");
+ã€€ã€€ã€€ }
+ã€€ã€€ }
+ã€€ }
 
-¡¡ if (DEBUG) {
-¡¡¡¡ System.out.println("ÏÂÔØÍê³É!!!");
-¡¡ }
+ã€€ if (DEBUG) {
+ã€€ã€€ System.out.println("ä¸‹è½½å®Œæˆ!!!");
+ã€€ }
 }
 
 /**
-* ½«HTTP×ÊÔ´Áí´æÎªÎÄ¼ş
+* å°†HTTPèµ„æºå¦å­˜ä¸ºæ–‡ä»¶
 *
 * @param destUrl String
 * @param fileName String
 * @throws Exception
 */
 public void saveToFile(String destUrl, String fileName)throws IOException{
-¡¡ FileOutputStream fos = null;
-¡¡ BufferedInputStream bis = null;
-¡¡ HttpURLConnection httpUrl = null;
-¡¡ URL url = null;
-¡¡ byte[] buf = new byte[BUFFER_SIZE];
-¡¡ int size = 0;
+ã€€ FileOutputStream fos = null;
+ã€€ BufferedInputStream bis = null;
+ã€€ HttpURLConnection httpUrl = null;
+ã€€ URL url = null;
+ã€€ byte[] buf = new byte[BUFFER_SIZE];
+ã€€ int size = 0;
 
-¡¡ //½¨Á¢Á´½Ó
-¡¡ url = new URL(destUrl);
-¡¡ httpUrl = (HttpURLConnection) url.openConnection();
-¡¡ //Á¬½ÓÖ¸¶¨µÄ×ÊÔ´
-¡¡ httpUrl.connect();
-¡¡ //»ñÈ¡ÍøÂçÊäÈëÁ÷
-¡¡ bis = new BufferedInputStream(httpUrl.getInputStream());
-¡¡ //½¨Á¢ÎÄ¼ş
-¡¡ fos = new FileOutputStream(fileName);
+ã€€ //å»ºç«‹é“¾æ¥
+ã€€ url = new URL(destUrl);
+ã€€ httpUrl = (HttpURLConnection) url.openConnection();
+ã€€ //è¿æ¥æŒ‡å®šçš„èµ„æº
+ã€€ httpUrl.connect();
+ã€€ //è·å–ç½‘ç»œè¾“å…¥æµ
+ã€€ bis = new BufferedInputStream(httpUrl.getInputStream());
+ã€€ //å»ºç«‹æ–‡ä»¶
+ã€€ fos = new FileOutputStream(fileName);
 
-¡¡ if (this.DEBUG) 
-¡¡System.out.println
-("ÕıÔÚ»ñÈ¡Á´½Ó[" + destUrl + "]µÄÄÚÈİ...\n½«Æä±£´æÎªÎÄ¼ş[" + fileName + "]");
+ã€€ if (this.DEBUG) 
+ã€€System.out.println
+("æ­£åœ¨è·å–é“¾æ¥[" + destUrl + "]çš„å†…å®¹...\nå°†å…¶ä¿å­˜ä¸ºæ–‡ä»¶[" + fileName + "]");
 
-¡¡ //±£´æÎÄ¼ş
-¡¡ while ( (size = bis.read(buf)) != -1) 
-¡¡¡¡ fos.write(buf, 0, size);
+ã€€ //ä¿å­˜æ–‡ä»¶
+ã€€ while ( (size = bis.read(buf)) != -1) 
+ã€€ã€€ fos.write(buf, 0, size);
 
-¡¡ fos.close();
-¡¡ bis.close();
-¡¡ httpUrl.disconnect();
+ã€€ fos.close();
+ã€€ bis.close();
+ã€€ httpUrl.disconnect();
 }
 
 /**
-* ÉèÖÃ´úÀí·şÎñÆ÷
+* è®¾ç½®ä»£ç†æœåŠ¡å™¨
 *
 * @param proxy String
 * @param proxyPort String
 */
 public void setProxyServer(String proxy, String proxyPort) {
-¡¡ //ÉèÖÃ´úÀí·şÎñÆ÷ 
-¡¡ System.getProperties().put("proxySet", "true");
-¡¡ System.getProperties().put("proxyHost", proxy);
-¡¡ System.getProperties().put("proxyPort", proxyPort);
+ã€€ //è®¾ç½®ä»£ç†æœåŠ¡å™¨ 
+ã€€ System.getProperties().put("proxySet", "true");
+ã€€ System.getProperties().put("proxyHost", proxy);
+ã€€ System.getProperties().put("proxyPort", proxyPort);
 }
 
 /**
-* ÉèÖÃÈÏÖ¤ÓÃ»§ÃûÓëÃÜÂë
+* è®¾ç½®è®¤è¯ç”¨æˆ·åä¸å¯†ç 
 *
 * @param uid String
 * @param pwd String
@@ -200,27 +200,27 @@ Authenticator.setDefault(new MyAuthenticator(uid, pwd));
 }
 
 /**
-* Ö÷·½·¨(ÓÃÓÚ²âÊÔ)
+* ä¸»æ–¹æ³•(ç”¨äºæµ‹è¯•)
 *
 * @param argv String[]
 */
 public static void main(String argv[]) {
-¡¡ HttpGet oInstance = new HttpGet();
-¡¡ try {
-¡¡ //Ôö¼ÓÏÂÔØÁĞ±í£¨´Ë´¦ÓÃ»§¿ÉÒÔĞ´Èë×Ô¼º´úÂëÀ´Ôö¼ÓÏÂÔØÁĞ±í£©
-¡¡ oInstance.addItem("http://www.ebook.com/java/ÍøÂç±à³Ì001.zip","./ÍøÂç±à³Ì1.zip");
-¡¡ oInstance.addItem("http://www.ebook.com/java/ÍøÂç±à³Ì002.zip","./ÍøÂç±à³Ì2.zip");
-¡¡ oInstance.addItem("http://www.ebook.com/java/ÍøÂç±à³Ì003.zip","./ÍøÂç±à³Ì3.zip");
-¡¡ oInstance.addItem("http://www.ebook.com/java/ÍøÂç±à³Ì004.zip","./ÍøÂç±à³Ì4.zip");
-¡¡ oInstance.addItem("http://www.ebook.com/java/ÍøÂç±à³Ì005.zip","./ÍøÂç±à³Ì5.zip");
-¡¡ oInstance.addItem("http://www.ebook.com/java/ÍøÂç±à³Ì006.zip","./ÍøÂç±à³Ì6.zip");
-¡¡ oInstance.addItem("http://www.ebook.com/java/ÍøÂç±à³Ì007.zip","./ÍøÂç±à³Ì7.zip");
-¡¡ //¿ªÊ¼ÏÂÔØ
-¡¡ oInstance.downLoadByList();
-¡¡ }
-¡¡ catch (Exception err) {
-¡¡¡¡ System.out.println(err.getMessage());
-¡¡ }
+ã€€ HttpGet oInstance = new HttpGet();
+ã€€ try {
+ã€€ //å¢åŠ ä¸‹è½½åˆ—è¡¨ï¼ˆæ­¤å¤„ç”¨æˆ·å¯ä»¥å†™å…¥è‡ªå·±ä»£ç æ¥å¢åŠ ä¸‹è½½åˆ—è¡¨ï¼‰
+ã€€ oInstance.addItem("http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹001.zip","./ç½‘ç»œç¼–ç¨‹1.zip");
+ã€€ oInstance.addItem("http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹002.zip","./ç½‘ç»œç¼–ç¨‹2.zip");
+ã€€ oInstance.addItem("http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹003.zip","./ç½‘ç»œç¼–ç¨‹3.zip");
+ã€€ oInstance.addItem("http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹004.zip","./ç½‘ç»œç¼–ç¨‹4.zip");
+ã€€ oInstance.addItem("http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹005.zip","./ç½‘ç»œç¼–ç¨‹5.zip");
+ã€€ oInstance.addItem("http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹006.zip","./ç½‘ç»œç¼–ç¨‹6.zip");
+ã€€ oInstance.addItem("http://www.ebook.com/java/ç½‘ç»œç¼–ç¨‹007.zip","./ç½‘ç»œç¼–ç¨‹7.zip");
+ã€€ //å¼€å§‹ä¸‹è½½
+ã€€ oInstance.downLoadByList();
+ã€€ }
+ã€€ catch (Exception err) {
+ã€€ã€€ System.out.println(err.getMessage());
+ã€€ }
 }
 }
  
