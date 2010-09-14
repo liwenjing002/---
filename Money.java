@@ -1,4 +1,4 @@
-﻿package com.hundsun.network.melody.common.util;
+package com.hundsun.network.melody.common.util;
 
 import java.io.Serializable;
 
